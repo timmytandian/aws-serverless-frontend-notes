@@ -1,19 +1,21 @@
 const config = {
-    // Backend config
+    STRIPE_KEY: "pk_test_51KgR5fCNskL63vDekKmOyj1it34iAGIT4w1GOEWxY58lYXnbDxlYExoyKPu4Efp9U0J5ygCS4qPpMouhleiZIiF500Z7ehSuCf",
+    MAX_ATTACHMENT_SIZE: 5000000,
+    
     s3: {
-        REGION: process.env.REACT_APP_REGION,
-        BUCKET: process.env.REACT_APP_BUCKET,
+        REGION: "ap-northeast-1",
+        BUCKET: "notes-app-upload-s3ipex",
     },
     apiGateway: {
-        REGION: process.env.REACT_APP_REGION,
-        URL: process.env.REACT_APP_API_URL,
+        REGION: "ap-northeast-1",
+        URL: "https://y5kbrl5dcd.execute-api.ap-northeast-1.amazonaws.com/prod",
     },
     cognito: {
-        REGION: process.env.REACT_APP_REGION,
-        USER_POOL_ID: process.env.REACT_APP_USER_POOL_ID,
-        APP_CLIENT_ID: process.env.REACT_APP_USER_POOL_CLIENT_ID,
-        IDENTITY_POOL_ID: process.env.REACT_APP_IDENTITY_POOL_ID,
+        REGION: "ap-northeast-1",
+        USER_POOL_ID: "ap-northeast-1_7dFrNbH8x",
+        APP_CLIENT_ID: "4sg0po6fmen61bksgnhvgg9anl",
+        IDENTITY_POOL_ID: "ap-northeast-1:93652474-ba13-4abe-9a93-624c0c06f6f2",
     },
 };
-
+  
 export default config;
